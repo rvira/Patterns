@@ -1,68 +1,58 @@
 Problem Statement: https://www.hackerrank.com/challenges/printing-pattern-2/problem
+Print a pattern of numbers from 1 to n as shown below. Each of the numbers is separated by a single space.
 
-```
-import java.util.Scanner;
+                            4 4 4 4 4 4 4  
+                            4 3 3 3 3 3 4   
+                            4 3 2 2 2 3 4   
+                            4 3 2 1 2 3 4   
+                            4 3 2 2 2 3 4   
+                            4 3 3 3 3 3 4   
+                            4 4 4 4 4 4 4   
 
-public class test {
-       public static void main(String[] args) {
-           System.out.println("Enter n: ");
-           Scanner sc = new Scanner(System.in);
-           int n = sc.nextInt();
-           for (int i = n; i >0; i--) {
-               int j=n,k;
-               for (k = 0; k < n; k++) {   
-                 if(j<i){
-                   j++;
-                   System.out.print(j+" ");
-                 }
-                 else{
-                   System.out.print(j+" ");
-                 }
-                 j-=1;
-              }
-               j=i;
-               int flag = n-i-1;
-               for (k=0; k < n-2; k++) {
-                   
-                 if(k>=i-1 && flag>0){
-                     j++;
-                     flag--;
-                 } 
-                 System.out.print(j+" ");
-                   
-              }
-               System.out.print(n);
-               System.out.println("");
-           }
-           
-           for (int i = 1; i <n; i++) {
-               
-               int j=n,k;
-               for (k = 0; k < n; k++) {   
-                 if(j>i){
-                   System.out.print(j+" ");
-                 }
-                 else{
-                     j++;
-                   System.out.print(j+" ");
-                 }
-                 j-=1;
-              }
-              j=i+1;
-               int flag = n-i-1;
-               for (k=0; k < n-2; k++) {
-                   
-                 if(k>=i && flag>0){
-                     j++;
-                     flag--;
-                 } 
-                 System.out.print(j+" ");
-                   
-             }
-               System.out.print(n);
-               System.out.println("");
-           }
-   }
-}
+Input Format
 
-```
+The input will contain a single integer n.
+
+Constraints
+
+1<=n<=100
+
+Sample Input 0
+2
+Sample Output 0
+
+2 2 2
+2 1 2
+2 2 2
+
+Sample Input 1
+5
+Sample Output 1
+
+5 5 5 5 5 5 5 5 5 
+5 4 4 4 4 4 4 4 5 
+5 4 3 3 3 3 3 4 5 
+5 4 3 2 2 2 3 4 5 
+5 4 3 2 1 2 3 4 5 
+5 4 3 2 2 2 3 4 5 
+5 4 3 3 3 3 3 4 5 
+5 4 4 4 4 4 4 4 5 
+5 5 5 5 5 5 5 5 5
+
+Sample Input 2
+7
+Sample Output 2
+
+7 7 7 7 7 7 7 7 7 7 7 7 7 
+7 6 6 6 6 6 6 6 6 6 6 6 7 
+7 6 5 5 5 5 5 5 5 5 5 6 7 
+7 6 5 4 4 4 4 4 4 4 5 6 7 
+7 6 5 4 3 3 3 3 3 4 5 6 7 
+7 6 5 4 3 2 2 2 3 4 5 6 7 
+7 6 5 4 3 2 1 2 3 4 5 6 7 
+7 6 5 4 3 2 2 2 3 4 5 6 7 
+7 6 5 4 3 3 3 3 3 4 5 6 7 
+7 6 5 4 4 4 4 4 4 4 5 6 7 
+7 6 5 5 5 5 5 5 5 5 5 6 7 
+7 6 6 6 6 6 6 6 6 6 6 6 7 
+7 7 7 7 7 7 7 7 7 7 7 7 7 
