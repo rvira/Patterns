@@ -1,4 +1,5 @@
 Problem Statement: https://www.hackerrank.com/challenges/printing-pattern-2/problem
+
 Print a pattern of numbers from 1 to n as shown below. Each of the numbers is separated by a single space.
 
                             4 4 4 4 4 4 4  
@@ -18,17 +19,17 @@ Constraints
 1<=n<=100
 
 Sample Input 0
-2
+```2```
 Sample Output 0
-
+```
 2 2 2
 2 1 2
 2 2 2
-
+```
 Sample Input 1
-5
+```5```
 Sample Output 1
-
+```
 5 5 5 5 5 5 5 5 5 
 5 4 4 4 4 4 4 4 5 
 5 4 3 3 3 3 3 4 5 
@@ -38,11 +39,11 @@ Sample Output 1
 5 4 3 3 3 3 3 4 5 
 5 4 4 4 4 4 4 4 5 
 5 5 5 5 5 5 5 5 5
-
+```
 Sample Input 2
-7
+```7```
 Sample Output 2
-
+```
 7 7 7 7 7 7 7 7 7 7 7 7 7 
 7 6 6 6 6 6 6 6 6 6 6 6 7 
 7 6 5 5 5 5 5 5 5 5 5 6 7 
@@ -56,3 +57,4 @@ Sample Output 2
 7 6 5 5 5 5 5 5 5 5 5 6 7 
 7 6 6 6 6 6 6 6 6 6 6 6 7 
 7 7 7 7 7 7 7 7 7 7 7 7 7 
+```
